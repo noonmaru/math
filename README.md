@@ -22,3 +22,8 @@
 >  	    }
 >  	}
 >   ```
+>   ```groovy
+>   dependencies {
+>      implementation 'com.github.noonmaru:tools:Tag'
+>   }
+>   ```
