@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.nemosw.mox.math;
+package com.github.noonmaru.math;
 
 public final class MathHelper
 {

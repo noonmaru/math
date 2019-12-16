@@ -14,18 +14,16 @@
  *  limitations under the License.
  */
 
-package com.nemosw.mox.math;
-
-import static com.nemosw.mox.math.MathHelper.*;
+package com.github.noonmaru.math;
 
 public final class Vector
 {
 
     public static void rotateAxisX(Iterable<Vector> vectors, double pitch)
     {
-        double radians = toRadians(pitch);
-        double cos = cos(radians);
-        double sin = sin(radians);
+        double radians = MathHelper.toRadians(pitch);
+        double cos = MathHelper.cos(radians);
+        double sin = MathHelper.sin(radians);
 
         for (Vector vector : vectors)
             vector.rotateAxisX(cos, sin);
@@ -33,9 +31,9 @@ public final class Vector
 
     public static void rotateAxisY(Iterable<Vector> vectors, double yaw)
     {
-        double radians = toRadians(yaw);
-        double cos = cos(radians);
-        double sin = sin(radians);
+        double radians = MathHelper.toRadians(yaw);
+        double cos = MathHelper.cos(radians);
+        double sin = MathHelper.sin(radians);
 
         for (Vector vector : vectors)
             vector.rotateAxisY(cos, sin);
@@ -43,9 +41,9 @@ public final class Vector
 
     public static void rotateAxisZ(Iterable<Vector> vectors, double roll)
     {
-        double radians = toRadians(roll);
-        double cos = cos(radians);
-        double sin = sin(radians);
+        double radians = MathHelper.toRadians(roll);
+        double cos = MathHelper.cos(radians);
+        double sin = MathHelper.sin(radians);
 
         for (Vector vector : vectors)
             vector.rotateAxisZ(cos, sin);
@@ -153,8 +151,8 @@ public final class Vector
 
     public Vector rotateAxisX(double pitch)
     {
-        double radians = toRadians(pitch);
-        rotateAxisX(cos(radians), sin(radians));
+        double radians = MathHelper.toRadians(pitch);
+        rotateAxisX(MathHelper.cos(radians), MathHelper.sin(radians));
 
         return this;
     }
@@ -170,8 +168,8 @@ public final class Vector
 
     public Vector rotateAxisY(double yaw)
     {
-        double radians = toRadians(yaw);
-        rotateAxisY(cos(radians), sin(radians));
+        double radians = MathHelper.toRadians(yaw);
+        rotateAxisY(MathHelper.cos(radians), MathHelper.sin(radians));
 
         return this;
     }
@@ -187,8 +185,8 @@ public final class Vector
 
     public Vector rotateAxisZ(double roll)
     {
-        double radians = toRadians(roll);
-        rotateAxisZ(cos(radians), sin(radians));
+        double radians = MathHelper.toRadians(roll);
+        rotateAxisZ(MathHelper.cos(radians), MathHelper.sin(radians));
 
         return this;
     }
@@ -231,7 +229,7 @@ public final class Vector
 
     public double lengthSquared()
     {
-        return square(x) + square(y) + square(z);
+        return MathHelper.square(x) + MathHelper.square(y) + MathHelper.square(z);
     }
 
     public double length()
@@ -241,7 +239,7 @@ public final class Vector
 
     public double distanceSquared(double x, double y, double z)
     {
-        return square(x - this.x) + square(y - this.y) + square(z - this.z);
+        return MathHelper.square(x - this.x) + MathHelper.square(y - this.y) + MathHelper.square(z - this.z);
     }
 
     public double distanceSquared(Vector p)
