@@ -7,11 +7,18 @@
 ![GitHub](https://img.shields.io/github/license/noonmaru/math)
 ![Twitch Status](https://img.shields.io/twitch/status/hptgrm)
 
-### 1.0
-> * 기능
-> 	```
->   MathHelper - 빠른 Math
->   Vector - 합, 곱, 회전이 가능한 벡터
->   VectorSpace - 벡터 집합
->   VectorParser - 이미지를 벡터로 변환
+> ### 1.0
+> * #### Features
+>   * MathHelper - 빠른 Math
+>   * Vector - 합, 곱, 회전이 가능한 벡터
+>   * VectorSpace - 벡터 집합
+>   * VectorParser - 이미지를 벡터로 변환
+> * #### Gradle
+>   ```groovy
+>   allprojects {
+> 	    repositories {
+>           ...
+>  	    	maven { url 'https://jitpack.io' }
+>  	    }
+>  	}
 >   ```
