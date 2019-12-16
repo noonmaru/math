@@ -23,6 +23,6 @@
 >   ```
 >   ```groovy
 >   dependencies {
->      implementation 'com.github.noonmaru:tools:1.0'
+>      implementation 'com.github.noonmaru:math:1.0'
 >   }
 >   ```
