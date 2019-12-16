@@ -7,7 +7,6 @@
 ![GitHub](https://img.shields.io/github/license/noonmaru/math)
 ![Twitch Status](https://img.shields.io/twitch/status/hptgrm)
 
-> ### 1.0
 > * #### Features
 >   * MathHelper - 빠른 Math
 >   * Vector - 합, 곱, 회전이 가능한 벡터
@@ -24,6 +23,6 @@
 >   ```
 >   ```groovy
 >   dependencies {
->      implementation 'com.github.noonmaru:tools:Tag'
+>      implementation 'com.github.noonmaru:tools:1.0'
 >   }
 >   ```
